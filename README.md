@@ -14,20 +14,20 @@ Dynamic Host Configuration Protocol (DHCP) was configured to automatically assig
 - Basic Network Troubleshooting (ping, ipconfig)
 
 ## Commands Used
-enable
-configure terminal
-no ip domain-lookup
+- enable
+- configure terminal
+- no ip domain-lookup
 
-interface g0/0
-ip address 192.168.1.1 255.255.255.0
-no shutdown
-exit
+- interface g0/0
+- ip address 192.168.1.1 255.255.255.0
+- no shutdown
+- exit
 
-ip dhcp pool OFFICE
-network 192.168.1.0 255.255.255.0
-default-router 192.168.1.1
-dns-server 192.168.1.10
-exit
+- ip dhcp pool OFFICE
+- network 192.168.1.0 255.255.255.0
+- default-router 192.168.1.1
+- dns-server 192.168.1.10
+- exit
 
 ## Network Topology
 Below is the physical network layout used in this lab.
